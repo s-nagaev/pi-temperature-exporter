@@ -1,0 +1,11 @@
+[Unit]
+Description=Prometheus Raspberry Pi temperature metrics exporter
+After=multi-user.target
+
+[Service]
+ExecStart=/home/pi/pi-temp-exporter
+Restart=always
+RestartSec=10s
+
+[Install]
+WantedBy=multi-user.target
