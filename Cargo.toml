@@ -1,0 +1,16 @@
+[package]
+name = "pi-temp-exporter"
+version = "0.1.0"
+authors = ["Sergei Nagaev <nagaev.sv@gmail.com>"]
+edition = "2021"
+
+[dependencies]
+actix-web = "4.2.1"
+lazy_static = "1.4.0"
+prometheus = "0.13.3"
+regex = "1.7.1"
+
+[profile.release]
+opt-level = 'z'
+lto = true
+codegen-units = 1
