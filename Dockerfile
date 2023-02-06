@@ -7,7 +7,7 @@ ENV PATH="/root/.cargo/bin:${PATH}"
 RUN rustup target add $TARGET
 
 WORKDIR /usr/src/pi-temp-exporter
-COPY Cargo.toml Cargo.lock .
+COPY Cargo.toml Cargo.lock /usr/src/pi-temp-exporter/
 COPY src /usr/src/pi-temp-exporter/src
 RUN cargo build --target $TARGET --release
 
