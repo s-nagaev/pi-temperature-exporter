@@ -27,7 +27,9 @@ async fn get_metrics() -> impl Responder {
     encoder.encode(&metric_families, &mut buffer).unwrap();
     let output = String::from_utf8(buffer.clone()).unwrap();
 
-    HttpResponse::Ok().json(output)
+    HttpResponse::Ok()
+        .content_type("application/text")
+        .body(output)
 }
 
 /// Health endpoint handler

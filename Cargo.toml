@@ -10,6 +10,10 @@ lazy_static = "1.4.0"
 prometheus = "0.13.3"
 regex = "1.7.1"
 
+[[bin]]
+name = "pi-temp-exporter"
+path = "src/main.rs"
+
 [profile.release]
 opt-level = 'z'
 lto = true
