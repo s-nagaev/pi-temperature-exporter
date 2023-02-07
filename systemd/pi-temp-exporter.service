@@ -1,8 +1,9 @@
 [Unit]
-Description=Raspberry Pi temperature metrics exporter for Prometheus
-After=multi-user.target
+Description=Pi Temperature Exporter
+After=network.target
 
 [Service]
+Type=simple
 ExecStart=/usr/local/bin/pi-temp-exporter
 Restart=always
 RestartSec=10s
