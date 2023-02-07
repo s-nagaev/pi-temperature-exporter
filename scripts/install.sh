@@ -5,7 +5,7 @@ LATEST_VERSION=$(curl -L -s -H 'Accept: application/json' ${GITHUB_REPO}/release
 BIN_ARCH_FILE_NAME="pi-temp-exporter_${LATEST_VERSION}_armv7.tar.gz"
 BIN_ARCH_FILE_URL="${GITHUB_REPO}/releases/download/${LATEST_VERSION}/${BIN_ARCH_FILE_NAME}"
 BIN_FILE_NAME="pi-temp-exporter"
-SERVICE_FILE_NAME="temp-exporter.service"
+SERVICE_FILE_NAME="pi-temp-exporter.service"
 SERVICE_FILE_URL="https://raw.githubusercontent.com/s-nagaev/pi-temperature-exporter/${LATEST_VERSION}/systemd/${SERVICE_FILE_NAME}"
 INSTALL_DIR="/usr/local/bin"
 
