@@ -9,9 +9,9 @@ use crate::collectors::temperature::get_gpu_temperature;
 
 lazy_static! {
     pub static ref CPU_TEMPERATURE: Gauge =
-        register_gauge!("cpu_temperature", "CPU Temperature in Celsius").unwrap();
+        register_gauge!("pi_cpu_temperature", "CPU Temperature in Celsius").unwrap();
     pub static ref GPU_TEMPERATURE: Gauge =
-        register_gauge!("gpu_temperature", "GPU Temperature in Celsius").unwrap();
+        register_gauge!("pi_gpu_temperature", "GPU Temperature in Celsius").unwrap();
 }
 
 /// Metrics endpoint handler
