@@ -17,7 +17,7 @@ The application can be run in two ways: running the binary file directly on the 
 Automated install/update of the application:
 
 ```shell
-curl https://raw.githubusercontent.com/s-nagaev/pi-temp-exporter/main/scripts/install.sh | bash
+curl https://raw.githubusercontent.com/s-nagaev/pi-temperature-exporter/main/scripts/install.sh | bash
 ```
 
 This script installs the binary to `/usr/local/bin` directory and sets up the systemd accordingly.
