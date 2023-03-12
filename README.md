@@ -1,10 +1,9 @@
-<p align="center">
+<h1 align="center">
     <picture>
       <img width=250 alt="Pi Temp Exporter logo" src="doc/logo.png">
     </picture>
-</p>
-
-# Pi Temperature Exporter
+    <p>Pi Temperature Exporter</p>
+</h1>
 
 A simple application for collecting Raspberry Pi's CPU and GPU temperatures and exporting them for [Prometheus](https://prometheus.io) consumption.
 
@@ -48,7 +47,7 @@ services:
       - "9002:9002"
 ```
 
-Then you can start the application using the `docker-compose`` up` command.
+Then you can start the application using the `docker-compose up -d` command.
 
 ## Usage
 
