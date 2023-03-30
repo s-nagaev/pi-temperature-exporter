@@ -11,7 +11,7 @@ COPY Cargo.toml Cargo.lock /usr/src/pi-temp-exporter/
 COPY src /usr/src/pi-temp-exporter/src
 RUN cargo build --target $TARGET --release
 
-FROM alpine:latest AS runtime
+FROM alpine:3.17.3 AS runtime
 ARG TARGET
 
 LABEL org.label-schema.schema-version = "1.0"
