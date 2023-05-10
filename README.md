@@ -5,6 +5,12 @@
     <p>Pi Temperature Exporter</p>
 </h1>
 
+[![Build](https://github.com/s-nagaev/pi-temperature-exporter/actions/workflows/build.yml/badge.svg)](https://github.com/s-nagaev/pi-temperature-exporter/actions/workflows/build.yml)
+[![docker hub](https://img.shields.io/docker/pulls/pysergio/pi-temp-exporter)](https://hub.docker.com/r/pysergio/pi-temp-exporter)
+[![docker image arch](https://img.shields.io/badge/docker%20image%20arch-armv7-informational)](https://hub.docker.com/r/pysergio/stubborn/tags)
+[![docker image size](https://img.shields.io/docker/image-size/pysergio/pi-temp-exporter/latest)](https://hub.docker.com/r/pysergio/pi-temp-exporter/tags)
+![license](https://img.shields.io/github/license/s-nagaev/pi-temperature-exporter)
+
 A simple application for collecting Raspberry Pi's CPU and GPU temperatures and exporting them for [Prometheus](https://prometheus.io) consumption.
 
 ## Installation
